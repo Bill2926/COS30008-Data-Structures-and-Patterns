@@ -1,0 +1,9 @@
+﻿  library_management.cpp
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Project1\library_management.cpp(104,13): warning C4566: character represented by universal-character-name '\u2713' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Project1\library_management.cpp(108,13): warning C4566: character represented by universal-character-name '\u2713' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Project1\library_management.cpp(115,13): warning C4566: character represented by universal-character-name '\u2713' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Project1\library_management.cpp(117,13): warning C4566: character represented by universal-character-name '\u2713' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Project1\library_management.cpp(119,13): warning C4566: character represented by universal-character-name '\u2713' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Project1\library_management.cpp(121,13): warning C4566: character represented by universal-character-name '\u2713' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Project1\library_management.cpp(158,13): warning C4566: character represented by universal-character-name '\u2713' cannot be represented in the current code page (1252)
+  Project1.vcxproj -> C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Project1\x64\Debug\Project1.exe
