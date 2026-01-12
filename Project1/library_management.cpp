@@ -1,10 +1,11 @@
 ﻿// This is a simple OOP librabry management system program
-
 #include <iostream>
 #include <string>
 #include <cmath>
 #include <vector>
 #include <algorithm>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -34,14 +35,54 @@ public:
 	void updateAvail(bool status) { isAvailable = status; }
 };
 
-class LibraryContainer {
+class Member {
+private:
+	int id;
+	string name;
+	string phone;
+	vector<string> borrowed_book_isbn;
+	int borrowLimit;
+
+	int genUserId() {
+		return (rand() % 100) + 1; // between 1 and 100; 
+	}
+
+public:
+	// Constructor
+	Member(string new_name, string new_phone)
+		: id(genUserId()), name(new_name), phone(new_phone), borrowLimit(3) {
+	}
+
+	// Getters
+	int showID() const { return id; }
+	string showUName() const { return name; }
+	string showPhone() const { return phone; }
+	int showBorrowLimit() const { return borrowLimit; }
+	int numberOfBorrowed() const { return borrowed_book_isbn.size(); }
+	vector<string> showBorrowedList() const { return borrowed_book_isbn; }
+
+	// Setters
+	void setName(const string& newName) { name = newName; }
+	void setPhoneNumber(const string& newPhone) { phone = newPhone; }
+	void borrowBook(const string& isbn) { borrowed_book_isbn.push_back(isbn); }
+};
+
+class Library {
 private:
 	vector<Book> bookShelf;
+	vector<Member> memberList;
 
 public:
 	// Methods
 	void addToShelf(Book b) {
+		for (int i = 0; i < bookShelf.size(); i++) {
+			if (bookShelf.at(i).showISBN() == b.showISBN()) {
+				cout << "This book ISBN is already in the library." << endl;
+				return;
+			}
+		}
 		bookShelf.push_back(b);
+		cout << "Added book successfully." << endl;
 	}
 
 	void removeFromShelf(Book b) {
@@ -82,107 +123,94 @@ public:
 		}
 		cout << noboolalpha;
 	}
+
+	void registerMember(string name, string phone) {
+		for (int i = 0; i < memberList.size(); i++) {
+			if (memberList.at(i).showPhone() == phone) {
+				cout << "Phone number is already used." << endl;
+				return;
+			}
+		}
+		Member newMember = Member(name, phone);
+		memberList.push_back(newMember);
+		cout << "Registered successfully with ID: " << newMember.showID() << endl;
+	}
+
+	void borrowBook(int member_id, string book_isbn) {
+		// Init null pointers
+		Member* m = nullptr;
+		Book* b = nullptr;
+
+		// Find member by id and see if they already hit the limit
+		for (int i = 0; i < memberList.size(); i++) {
+			if (memberList.at(i).showID() == member_id) {
+				m = &memberList.at(i);
+				break;
+			}
+		}
+
+		if (m == nullptr) {
+			cout << "Can not find the member ID." << endl;
+			return;
+		}
+
+		if (m->numberOfBorrowed() == m->showBorrowLimit()) {
+			cout << "This user can not borrow this time. Please return some books first." << endl;
+			return;
+		}
+
+		// Find book by isbn
+		for (int i = 0; i < bookShelf.size(); i++) {
+			if (bookShelf.at(i).showISBN() == book_isbn) {
+				b = &bookShelf.at(i);
+				break;
+			}
+		}
+
+		if (b == nullptr) {
+			cout << "Can not find the book ISBN." << endl;
+			return;
+		}
+
+		if (b->showAvailability() == 0) {
+			cout << "This book is not available now." << endl;
+			return;
+		}
+
+		// All passed
+		b->updateAvail(false);
+		m->borrowBook(book_isbn);
+	}
 };
 
-//int main() {
-//	Book steel("Thep da toi the day", "UK guy", "123abc", true, 1990);
-//	Book book2("1984", "George Orwell", "456def", true, 1949);
-//	LibraryContainer bs;
-//	bs.addToShelf(steel);
-//	bs.addToShelf(book2);
-//	bs.showBookShelf();
-//	return 0;
-//};
-
 int main() {
-    cout << "=== LIBRARY MANAGEMENT SYSTEM TEST ===" << endl;
-    cout << "\n--- Test 1: Creating Books ---" << endl;
-    Book steel("Thep da toi the day", "UK guy", "123abc", true, 1990);
-    Book book2("1984", "George Orwell", "456def", true, 1949);
-    Book book3("To Kill a Mockingbird", "Harper Lee", "789ghi", true, 1960);
-    Book book4("The Great Gatsby", "F. Scott Fitzgerald", "101jkl", false, 1925);
-    cout << "✓ Created 4 books successfully" << endl;
+	srand(time(0));
 
-    cout << "\n--- Test 2: Creating Empty Library ---" << endl;
-    LibraryContainer bs;
-    cout << "✓ Library created" << endl;
+	cout << "=== LIBRARY SYSTEM TEST ===" << endl;
 
-    cout << "\n--- Test 3: Showing Empty Library ---" << endl;
-    bs.showBookShelf();
+	Library lib;
 
-    cout << "\n--- Test 4: Adding Books to Library ---" << endl;
-    bs.addToShelf(steel);
-    cout << "✓ Added: " << steel.showTitle() << endl;
-    bs.addToShelf(book2);
-    cout << "✓ Added: " << book2.showTitle() << endl;
-    bs.addToShelf(book3);
-    cout << "✓ Added: " << book3.showTitle() << endl;
-    bs.addToShelf(book4);
-    cout << "✓ Added: " << book4.showTitle() << endl;
+	// Add books
+	cout << "\n1. Adding books..." << endl;
+	lib.addToShelf(Book("1984", "Orwell", "001", true, 1949));
+	lib.addToShelf(Book("Mockingbird", "Lee", "002", true, 1960));
+	lib.showBookShelf();
 
-    cout << "\n--- Test 5: Displaying All Books ---" << endl;
-    bs.showBookShelf();
+	// Register members
+	cout << "\n2. Registering members..." << endl;
+	lib.registerMember("Alice", "111-1111");
+	lib.registerMember("Bob", "222-2222");
 
-    cout << "\n--- Test 6: Removing Existing Book ---" << endl;
-    cout << "Attempting to remove: " << book2.showTitle() << endl;
-    bs.removeFromShelf(book2);
-    cout << "\nLibrary after removal:" << endl;
-    bs.showBookShelf();
+	// Test borrowing (Note: IDs are random!)
+	/*Member alice("Alice", "111-1111");*/
+	/*cout << "\n3. Alice (ID: " << alice.showID() << ") borrows book..." << endl;*/
+	int input_id;
+	cout << "Your id?: ";
+	cin >> input_id;
+	lib.borrowBook(input_id, "001");
 
-    cout << "\n--- Test 7: Removing Non-Existent Book ---" << endl;
-    Book nonExistent("Fake Book", "Nobody", "999zzz", true, 2000);
-    cout << "Attempting to remove non-existent book:" << endl;
-    bs.removeFromShelf(nonExistent);
+	lib.showBookShelf();
 
-    cout << "\n--- Test 8: Removing First Book ---" << endl;
-    cout << "Attempting to remove first book: " << steel.showTitle() << endl;
-    bs.removeFromShelf(steel);
-    cout << "\nLibrary after removal:" << endl;
-    bs.showBookShelf();
-
-    cout << "\n--- Test 9: Removing Last Book ---" << endl;
-    cout << "Attempting to remove last book: " << book4.showTitle() << endl;
-    bs.removeFromShelf(book4);
-    cout << "\nLibrary after removal:" << endl;
-    bs.showBookShelf();
-
-    cout << "\n--- Test 10: Removing Until Empty ---" << endl;
-    bs.removeFromShelf(book3);
-    cout << "\nLibrary after removing all books:" << endl;
-    bs.showBookShelf();
-
-    cout << "\n--- Test 11: Adding Books Back ---" << endl;
-    bs.addToShelf(steel);
-    bs.addToShelf(book2);
-    bs.addToShelf(book3);
-    cout << "✓ Added 3 books back" << endl;
-    bs.showBookShelf();
-
-    cout << "\n--- Test 12: Testing Book Getters ---" << endl;
-    cout << "Book details for '" << steel.showTitle() << "':" << endl;
-    cout << "  Title: " << steel.showTitle() << endl;
-    cout << "  Author: " << steel.showAuthor() << endl;
-    cout << "  ISBN: " << steel.showISBN() << endl;
-    cout << "  Available: " << boolalpha << steel.showAvailability() << noboolalpha << endl;
-    cout << "  Year: " << steel.showPublicationYear() << endl;
-
-    cout << "\n--- Test 13: Testing Availability Update ---" << endl;
-    cout << "Before: " << steel.showTitle() << " availability = "
-        << boolalpha << steel.showAvailability() << noboolalpha << endl;
-    steel.updateAvail(false);
-    cout << "After update: " << steel.showTitle() << " availability = "
-        << boolalpha << steel.showAvailability() << noboolalpha << endl;
-    steel.updateAvail(true);  // Reset
-    cout << "Reset to: " << boolalpha << steel.showAvailability() << noboolalpha << endl;
-
-    /*cout << "\n--- Test 14: Adding Duplicate ISBN ---" << endl;
-    Book duplicate("Different Title", "Different Author", "123abc", true, 2020);
-    cout << "Adding book with duplicate ISBN (123abc):" << endl;
-    bs.addToShelf(duplicate);
-    cout << "Note: Your system allows duplicates. Consider adding validation!" << endl;
-    bs.showBookShelf();*/
-
-    cout << "\n=== ALL TESTS COMPLETED ===" << endl;
-
-    return 0;
+	cout << "\n=== TEST COMPLETE ===" << endl;
+	return 0;
 }

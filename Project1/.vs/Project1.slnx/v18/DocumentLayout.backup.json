@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{750CC80C-BA7B-448A-BFE7-220BA81FABC6}|Project1.vcxproj|solutionrelative:library_management.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{750CC80C-BA7B-448A-BFE7-220BA81FABC6}|Project1.vcxproj|C:\\Users\\Admin\\Documents\\GitHub\\COS30008-Data-Structures-and-Patterns\\Project1\\vocvach.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{750CC80C-BA7B-448A-BFE7-220BA81FABC6}|Project1.vcxproj|solutionrelative:vocvach.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{750CC80C-BA7B-448A-BFE7-220BA81FABC6}|Project1.vcxproj|C:\\Users\\Admin\\Documents\\GitHub\\COS30008-Data-Structures-and-Patterns\\Project1\\claude_suggestion.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{750CC80C-BA7B-448A-BFE7-220BA81FABC6}|Project1.vcxproj|solutionrelative:claude_suggestion.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
@@ -28,7 +32,7 @@
               "RelativeDocumentMoniker": "library_management.cpp",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\COS30008-Data-Structures-and-Patterns\\Project1\\library_management.cpp*",
               "RelativeToolTip": "library_management.cpp*",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAAALYAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAAAM8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-10T15:07:41.799Z",
               "EditorCaption": ""
@@ -42,12 +46,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "vocvach.cpp",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\COS30008-Data-Structures-and-Patterns\\Project1\\vocvach.cpp",
+              "RelativeDocumentMoniker": "vocvach.cpp",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\COS30008-Data-Structures-and-Patterns\\Project1\\vocvach.cpp",
+              "RelativeToolTip": "vocvach.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-12T04:28:55.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "claude_suggestion.txt",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\COS30008-Data-Structures-and-Patterns\\Project1\\claude_suggestion.txt",
               "RelativeDocumentMoniker": "claude_suggestion.txt",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\COS30008-Data-Structures-and-Patterns\\Project1\\claude_suggestion.txt",
               "RelativeToolTip": "claude_suggestion.txt",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAOEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAALQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2026-01-10T15:32:10.026Z",
               "EditorCaption": ""
