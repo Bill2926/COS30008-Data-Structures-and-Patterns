@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ParticleSimulation.vcxproj" Id="a32bb39b-9f66-4dbc-840e-00aca56d6c67" />
+</Solution>

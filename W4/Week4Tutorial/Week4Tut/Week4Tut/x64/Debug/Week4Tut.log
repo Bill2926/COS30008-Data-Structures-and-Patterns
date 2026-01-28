@@ -1,0 +1,6 @@
+﻿  Main.cpp
+  ResistorBase.cpp
+  ResistorBaseScaling.cpp
+  Generating Code...
+Main.obj : error LNK2019: unresolved external symbol "public: __cdecl PassiveResistor::PassiveResistor(double)" (??0PassiveResistor@@QEAA@N@Z) referenced in function "void __cdecl runP1(void)" (?runP1@@YAXXZ)
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W4\Week4Tutorial\Week4Tut\x64\Debug\Week4Tut.exe : fatal error LNK1120: 1 unresolved externals

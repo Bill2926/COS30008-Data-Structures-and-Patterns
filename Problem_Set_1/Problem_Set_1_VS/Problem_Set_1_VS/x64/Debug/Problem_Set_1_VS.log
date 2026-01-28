@@ -1,0 +1,24 @@
+﻿  BersteinBasisPolynomial.cpp
+  Combination.cpp
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Problem_Set_1\Problem_Set_1_VS\BersteinBasisPolynomial.cpp(9,18): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Problem_Set_1\Problem_Set_1_VS\BersteinBasisPolynomial.cpp(10,18): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Problem_Set_1\Problem_Set_1_VS\BersteinBasisPolynomial.cpp(18,17): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'double', possible loss of data
+  Main.cpp
+  Polygon.cpp
+  PolygonPS1.cpp
+  PolynomialPS1.cpp
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Problem_Set_1\Problem_Set_1_VS\Polynomial.h(29,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'PolynomialPS1.cpp')
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Problem_Set_1\Problem_Set_1_VS\Polynomial.h(32,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'PolynomialPS1.cpp')
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Problem_Set_1\Problem_Set_1_VS\Polynomial.h(61,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'PolynomialPS1.cpp')
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Problem_Set_1\Problem_Set_1_VS\Polynomial.h(71,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'PolynomialPS1.cpp')
+  
+  Vector2D.cpp
+  Generating Code...
+  Problem_Set_1_VS.vcxproj -> C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\Problem_Set_1\Problem_Set_1_VS\x64\Debug\Problem_Set_1_VS.exe

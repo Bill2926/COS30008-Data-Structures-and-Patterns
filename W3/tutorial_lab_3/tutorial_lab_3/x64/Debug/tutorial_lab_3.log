@@ -1,0 +1,14 @@
+﻿  Main.cpp
+C:\Users\Admin\Desktop\COS30008\W3\tutorial_lab_3\Polynomial.h(30,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+C:\Users\Admin\Desktop\COS30008\W3\tutorial_lab_3\Polynomial.h(33,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+C:\Users\Admin\Desktop\COS30008\W3\tutorial_lab_3\Polynomial.h(62,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+C:\Users\Admin\Desktop\COS30008\W3\tutorial_lab_3\Polynomial.h(72,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+  tutorial_lab_3.vcxproj -> C:\Users\Admin\Desktop\COS30008\W3\tutorial_lab_3\x64\Debug\tutorial_lab_3.exe

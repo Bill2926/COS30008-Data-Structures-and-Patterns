@@ -55,10 +55,10 @@
 //	//cout << test1.append(test2) << endl;
 //	//cout << test1.at(1)<< endl;
 //
-//	///*string name;
-//	//getline(cin, name);
-//	//cout << "Your full name is: " << name << endl;*/
-//	//cout << log(4);
+	/*string name;
+	getline(cin, name);
+	cout << "Your full name is: " << name << endl;*/
+	//cout << log(4);*/
 //
 //
 //	//// boolalpha to manipulate cout to print the whole words of boolean
