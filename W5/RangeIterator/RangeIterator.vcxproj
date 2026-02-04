@@ -18,22 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="IntVector.h" />
-    <ClInclude Include="ShakerSortableIntVector.h" />
-    <ClInclude Include="SortableIntVector.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="IntVector.cpp" />
-    <ClCompile Include="Main_PS2.cpp" />
-    <ClCompile Include="ShakerSortableIntVector.cpp" />
-    <ClCompile Include="SortableIntVector.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{de9c43f8-9f75-4aea-bd1e-31e61523c0a1}</ProjectGuid>
-    <RootNamespace>ProblemSet2</RootNamespace>
+    <ProjectGuid>{81f60e6b-6947-4baa-bb85-6b865f1c2914}</ProjectGuid>
+    <RootNamespace>RangeIterator</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -137,6 +126,13 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="range.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="iterator.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -1,0 +1,48 @@
+﻿  iterator.cpp
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\range.cpp(27,11): error C3646: 'begin': unknown override specifier
+  (compiling source file 'iterator.cpp')
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\range.cpp(27,16): error C2059: syntax error: '('
+  (compiling source file 'iterator.cpp')
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\range.cpp(27,19): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'iterator.cpp')
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\range.cpp(31,11): error C3646: 'end': unknown override specifier
+  (compiling source file 'iterator.cpp')
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\range.cpp(31,14): error C2059: syntax error: '('
+  (compiling source file 'iterator.cpp')
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\range.cpp(31,17): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'iterator.cpp')
+  
+  main.cpp
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\range.cpp(27,11): error C3646: 'begin': unknown override specifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\range.cpp(27,16): error C2059: syntax error: '('
+  (compiling source file 'main.cpp')
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\range.cpp(27,19): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\range.cpp(31,11): error C3646: 'end': unknown override specifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\range.cpp(31,14): error C2059: syntax error: '('
+  (compiling source file 'main.cpp')
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\range.cpp(31,17): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\range.cpp(14,7): error C2011: 'Range': 'class' type redefinition
+  (compiling source file 'main.cpp')
+      C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\range.cpp(14,7):
+      see declaration of 'Range'
+  
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\main.cpp(8,8): error C2079: 'r' uses undefined class 'Range'
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\main.cpp(11,28): error C3536: 'it': cannot be used before it is initialized
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\main.cpp(12,11): error C2100: you cannot dereference an operand of type '<error>'
+C:\Users\Admin\Documents\GitHub\COS30008-Data-Structures-and-Patterns\W5\RangeIterator\main.cpp(12,8): error C2088: built-in operator '<<' cannot be applied to an operand of type 'std::ostream'
+  Generating Code...

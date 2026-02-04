@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Iterator_Home.vcxproj" Id="38ded235-d98a-4f25-930e-510d1c27c86a" />
+</Solution>

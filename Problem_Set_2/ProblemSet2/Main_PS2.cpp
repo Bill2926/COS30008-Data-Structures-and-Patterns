@@ -6,9 +6,9 @@
 
 using namespace std;
 
-#define P1
+//#define P1
 //#define P2
-//#define P3
+#define P3
 
 #ifdef P1
 
@@ -91,7 +91,11 @@ void runP2()
     // Use a lambda expression here that orders integers in increasing order.
     // The lambda expression does not capture any variables of throws any exceptions.
     // It has to return a bool value.
-    lVector.sort( /* lambda expression */ );
+    lVector.sort(
+        [](int leftVal, int rightVal) -> bool {
+            return leftVal <= rightVal;
+        }
+    );
     
     cout << "After sorting:" << endl;
     
