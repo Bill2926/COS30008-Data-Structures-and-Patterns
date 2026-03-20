@@ -1,8 +1,35 @@
-.vs/ 
-[Bb]in/ 
-[Oo]bj/ 
-*.exe 
-*.pdb 
-*.user 
-pycache/
-*.pyc
+# --- Visual Studio Temporary Files ---
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.user
+*.aps
+*.opendb
+*.pdb
+*.ilk
+*.sqlitenoindex
+
+# --- MSVC Build Outputs ---
+*.obj
+*.lib
+*.exp
+*.exe
+*.dll
+
+# --- Visual Studio Solution specific ---
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# --- CMake / Build Systems ---
+out/
+build/
+CMakeFiles/
+CMakeSettings.json
+
+# --- VS Code specific (if you use both) ---
+.vscode/
+ipch/
