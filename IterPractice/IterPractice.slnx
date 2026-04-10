@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="IterPractice.vcxproj" Id="c9612a67-5340-447a-9b60-fffec4062e7c" />
+</Solution>
